@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, input {
+    font-family: "Rage Italic", sans-serif;
+
+
+}
+
+.container {
+    background: url("/images/porsche-911-gt3.jpg") no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.central-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 47rem;
+    width: 100%;
+
+}
+
+.index-btn {
+    max-width: 20rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    background: rgba(147, 81, 22, 0.9);
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+    color: #f8f9f9;
+    z-index: 1;
+}
+
