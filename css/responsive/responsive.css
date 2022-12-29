@@ -1,0 +1,18 @@
+@media (max-width: 28em) {
+    .central-container{
+        flex-direction: column;
+        gap: 7rem;
+    }
+
+    .btn-container{
+        max-width: 30rem;
+    }
+
+    .index-btn {
+        max-width: 30rem;
+    }
+
+    .index-btn:hover{
+        top: 0;
+    }
+}
