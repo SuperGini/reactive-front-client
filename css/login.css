@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 
-html {
+html{
     font-size: 62.5%;
 }
 
-body, input {
+body, input{
     font-family: "Roboto", sans-serif;
 }
 
-.create-container{
+.login-container{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -25,7 +25,7 @@ input{
     display: block;
 }
 
-.create-central-container{
+.login-central-container{
     max-width: 70rem;
     width: 100%;
     max-height: 70rem;
@@ -33,50 +33,23 @@ input{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 
     display: flex;
-
 }
 
-.left-image{
-    background: url("/images/left-image.jpg") no-repeat center center/cover;
+.login-image{
+    background: url("/images/porsche-white.jpg") no-repeat center center/cover ;
     max-width: 30rem;
     width: 100%;
     max-height: 70rem;
     height: 100%;
 }
 
-.right-form{
+.login-form{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-
-h2{
-    font-size: 2.5rem;
-    margin-top: 4rem;
-    color: var(--gray-color);
-}
-
-.margin{
-    margin-top: 8rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
