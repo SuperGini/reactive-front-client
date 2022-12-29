@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, input {
+    font-family: "Roboto", sans-serif;
+}
+
+.create-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white-color);
+}
+
+input{
+    display: block;
+}
+
+.create-central-container{
+    max-width: 70rem;
+    width: 100%;
+    max-height: 70rem;
+    height: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+
+    display: flex;
+
+}
+
+.left-image{
+    background: url("/images/left-image.jpg") no-repeat center center/cover;
+    max-width: 30rem;
+    width: 100%;
+    max-height: 70rem;
+    height: 100%;
+}
+
+.right-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    color: var(--gray-color);
+}
+
+.form-field{
+    width: 75%;
+    position: relative;
+    margin-top: 3rem;
+
+}
+
+.margin{
+    margin-top: 8rem;
+}
+
+ion-icon{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    font-size: 16px;
+    transform: translateY(-50%);
+    color: var(--gray-color);
+}
+
+input{
+    max-width: 30rem;
+    width: 100%;
+    padding: 1rem 3rem;
+    border: 1px solid var(--orange-color);
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    color: var(--gray-color);
+    outline: none;
+}
+
+.input-field:focus{
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.5),
+    0 2px 4px rgba(0,0,0,0.1),
+    0 4px 8px rgba(0,0,0,0.1),
+    0 8px 16px rgba(0,0,0,0.1);
+}
+
+.create-btn{
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background: var(--orange-color);
+    color: var(--white-color);
+    transition: 0.2s ease-in-out;
+    border: 0.3rem solid var(--orange-color);
+}
+
+.create-btn:hover{
+    cursor: pointer;
+    background: var(--dark-gray);
+}
+
+.login-page{
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--dark-gray);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+
+.login-page:visited {
+    color: var(--dark-gray);
+}
+
+.login-page:hover{
+    color: var(--dark-gray);
+    border-bottom: 1px solid var(--orange-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
