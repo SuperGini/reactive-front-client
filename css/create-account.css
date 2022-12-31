@@ -12,7 +12,7 @@ body, input {
     font-family: "Roboto", sans-serif;
 }
 
-.create-container{
+.create-container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -21,11 +21,11 @@ body, input {
     background: var(--white-color);
 }
 
-input{
+input {
     display: block;
 }
 
-.create-central-container{
+.create-central-container {
     max-width: 70rem;
     width: 100%;
     max-height: 70rem;
@@ -36,7 +36,7 @@ input{
 
 }
 
-.left-image{
+.left-image {
     background: url("/images/left-image.jpg") no-repeat center center/cover;
     max-width: 30rem;
     width: 100%;
@@ -44,22 +44,35 @@ input{
     height: 100%;
 }
 
-.right-form{
+.right-form {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-h2{
+h2 {
     font-size: 2.5rem;
     margin-top: 4rem;
     color: var(--gray-color);
 }
 
-.margin{
+.margin {
     margin-top: 8rem;
 }
+
+.create-account-info {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    color: #2874a6;
+    text-align: center;
+}
+
+p {
+    margin-top: 0.3rem;
+}
+
+
 
 
 

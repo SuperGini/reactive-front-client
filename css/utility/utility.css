@@ -67,3 +67,12 @@ input{
     color: var(--dark-gray);
     border-bottom: 1px solid var(--orange-color);
 }
+
+
+.display-info-none {
+    display: none;
+}
+
+.display-info-show {
+    display: block;
+}

@@ -14,31 +14,40 @@
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/create-account.css">
     <link rel="stylesheet" href="css/utility/utility.css">
+
+    <script defer src="js/htmlPageSelector.js"></script>
+    <script defer src="js/views/createAccountView.js"></script>
+    <script defer src="js/model/customer.js"></script>
+    <script defer src="js/service/createAccount.js"></script>
     <title>Create account page</title>
 </head>
 <body>
 <div class="create-container">
     <div class="create-central-container">
         <div class="left-image"></div>
-        <div class="right-form">
+        <form class="right-form" action="" method="post">
             <h2>Create account</h2>
             <div class="form-field margin">
                 <ion-icon name="person"></ion-icon>
-                <input type="text" name="username" class="input-field" placeholder="username">
+                <input type="text" name="username" class="input-field create-username" placeholder="username">
             </div>
             <div class="form-field">
                 <ion-icon name="person"></ion-icon>
-                <input type="text" name="first-name" class="input-field" placeholder="first name">
+                <input type="text" name="first-name" class="input-field create-first-name" placeholder="first name">
             </div>
             <div class="form-field">
                 <ion-icon name="person"></ion-icon>
-                <input type="text" name="last-name" class="input-field" placeholder="last name">
+                <input type="text" name="last-name" class="input-field create-last-name" placeholder="last name">
             </div>
             <div class="form-field">
-                <input type="button" class="create-btn render-btn" value="Create account">
+                <input type="button" class="create-btn2 render-btn" value="Create account">
             </div>
             <a href="" class="login-page render-link">Login page</a>
-        </div>
+            <div class="create-account-info display-info-none">
+                <p>Account created.</p>
+                <p>Please go login page to login</p>
+            </div>
+        </form>
     </div>
 </div>
 
