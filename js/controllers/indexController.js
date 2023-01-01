@@ -1,7 +1,6 @@
 'use strict'
 
 const indexBtnContainer = document.querySelector('.central-container');
-
 const htmlPageSelector = new HtmlPageSelector();
 
 
