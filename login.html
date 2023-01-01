@@ -11,9 +11,17 @@
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
             rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/color.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="./css/utility/utility.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/utility/utility.css">
+
+    <script defer src="js/utility/constants.js"></script>
+    <script defer src="js/views/loginView.js"></script>
+    <script defer src="js/gateway/frontGateway.js"></script>
+    <script defer src="js/service/loginService.js"></script>
+    <script defer src="js/controllers/loginController.js"></script>
+
+
     <title>Login</title>
 </head>
 <body>
@@ -22,6 +30,8 @@
         <div class="login-image">
         </div>
         <div class="login-form">
+            <div class="username-error-message">
+            </div>
             <div class="form-field">
                 <ion-icon name="person"></ion-icon>
                 <input type="text" name="username" class="login-username" placeholder="username">
@@ -29,7 +39,7 @@
             <div class="form-field">
                 <input type="button" class="login-btn render-btn" value="login">
             </div>
-            <a href="" class="login-page render-link">Create account page</a>
+            <a href="" class="create-Account-page render-link">Create account page</a>
         </div>
     </div>
 </div>

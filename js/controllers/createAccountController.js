@@ -19,7 +19,6 @@ class CreateAccountController {
         );
     }
 }
-
 const creatAccountController = new CreateAccountController();
 
 

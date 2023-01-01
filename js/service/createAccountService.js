@@ -9,7 +9,6 @@ class CreateAccountService {
     createView = new CreateAccountView();
     gateway = new FrontGateway();
 
-
     async createCustomer(customer) {
         try {
 
@@ -17,7 +16,7 @@ class CreateAccountService {
 
            // const responseBody = await response.json();
 
-            if (response.status === 201) {
+            if (CREATED === response.status) {
                 this.createAccountInfo.innerHTML = "";
                 this.createAccountInfo.insertAdjacentHTML('afterbegin', this.createView.renderSuccessCreateAccountMessage());
                 this.createAccountInfo.classList.remove('display-info-none');
@@ -28,7 +27,7 @@ class CreateAccountService {
                 this.lastName.value = "";
             }
 
-            if (response.status === 400) {
+            if (BAD_REQUEST === response.status) {
                 this.createAccountInfo.innerHTML = "";
                 this.createAccountInfo.insertAdjacentHTML('afterbegin', this.createView.renderFailToCreateAccountMessage());
                 this.createAccountInfo.classList.remove('display-info-none');

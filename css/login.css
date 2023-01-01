@@ -51,3 +51,8 @@ input{
     justify-content: center;
 }
 
+.username-error-message{
+    font-size: 1.6rem;
+    color: var(--red-color);
+}
+
