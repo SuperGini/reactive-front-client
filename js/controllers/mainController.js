@@ -1,5 +1,6 @@
 'use strict'
 const contactIcons = document.querySelector('.contact-icons');
+const addItemBtn = document.querySelector(".add-item-btn");
 
 class MainController {
 
@@ -22,6 +23,10 @@ contactIcons.addEventListener('click', e => {
     }
 
 });
+
+addItemBtn.addEventListener("click", () => {
+    //todo to stuff and shit -> to add items to database and display them to table
+})
 
 
 
