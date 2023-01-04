@@ -4,7 +4,7 @@
     margin-top: 3rem;
 }
 
-ion-icon{
+.form-field ion-icon{
     position: absolute;
     top: 50%;
     left: 3%;
