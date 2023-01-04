@@ -67,6 +67,13 @@ body {
     margin-left: 2rem;
 }
 
+.header .nav-bar li a:hover{
+    background: var(--dark-gray);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
 .header .app-name {
     display: flex;
     justify-content: center;
@@ -74,6 +81,10 @@ body {
     font-size: 1.6rem;
     color: var(--orange-color);
     padding-left: 2rem;
+}
+
+.header .app-name:hover{
+    color: var(--dark-gray);
 }
 
 .main-page-form-and-items-container {
