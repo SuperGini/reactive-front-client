@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.account-container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-account-management {
+    width: 100vw;
+    min-height: 5rem;
+    background: var(--orange-color);
+}
+
+.space2 {
+    max-height: 10vh;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+.more-space {
+    max-height: 40vh;
+}
+
+.central-account-management-container {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+
+    max-width: 110rem;
+    width: 100%;
+    background: #eaeded;
+    border-radius: 0.5rem;
+}
+
+.left-account-management {
+    display: flex;
+    align-self: center;
+    max-width: 30rem;
+    width: 100%;
+}
+
+.main-page-btn {
+    max-width: 30rem;
+    width: 100%;
+    margin-left: 2rem;
+    padding: 1.5rem;
+    background: var(--orange-color);
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--white-color);
+    transition: 0.2s ease-in-out;
+}
+
+.main-page-btn:hover {
+    background: var(--dark-gray);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.right-account-management {
+    max-width: 50rem;
+    width: 100%;
+    margin: 2rem;
+    border-left: 1px solid var(--orange-color);
+}
+
+.right-account-management h3 {
+    font-size: 3rem;
+    color: var(--dark-gray);
+    margin-left: 2rem;
+
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    color: var(--gray-color);
+}
+
+.customer-info ion-icon {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    color: var(--orange-color);
+
+}
+
+.customer-info h4 {
+    font-size: 1.6rem;
+
+}
+
+.footer {
+    background: #ebf5fb;
+    max-width: 110rem;
+    width: 100%;
+    max-height: 6rem;
+    min-height: 5rem;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 2rem 2rem;
+    color: var(--dark-gray);
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+.footer h3 {
+    margin-right: 1rem;
+}
+
+.contact-icons {
+    display: flex;
+    align-items: center;
+
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+
+.github {
+    display: block;
+    color: #d35400;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.linkedin {
+    display: block;
+
+    color: var(--dark-gray);
+    text-decoration: none;
+    margin-right: 0.5rem;
+    border-bottom: 1px solid transparent;
+}
+
+.linkedin-link {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.github-link {
+
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.github:hover {
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+.linkedin:hover {
+    border-bottom: 1px solid var(--orange-color);
+}
+
+span {
+    font-size: 1.6rem;
+    color: var(--orange-color);
+}

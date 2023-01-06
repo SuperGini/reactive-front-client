@@ -1,28 +1,23 @@
 'use strict'
 const contactIcons = document.querySelector('.contact-icons');
 const addItemBtn = document.querySelector(".add-item-btn");
+const accountLink = document.querySelector(".account-settings");
 
-class MainController {
-
-    changePage(url) {
-        window.open(url, "_blank").focus();
-    }
-
-}
-
-const mainPageController = new MainController();
+const changeThePage = new PageSelector();
 
 contactIcons.addEventListener('click', e => {
 
     if (e.target.classList.contains("linkedin-link")) {
-        mainPageController.changePage("https://www.linkedin.com/in/mihai-iordache-27a98615a/");
+        changeThePage.changeToExternalPage("https://www.linkedin.com/in/mihai-iordache-27a98615a/");
     }
 
     if (e.target.classList.contains("github-link")) {
-        mainPageController.changePage("https://github.com/SuperGini?tab=repositories");
+        changeThePage.changeToExternalPage("https://github.com/SuperGini?tab=repositories");
     }
 
 });
+
+accountLink.addEventListener("click", () => accountLink.href = "./account.html");
 
 addItemBtn.addEventListener("click", () => {
     //todo to stuff and shit -> to add items to database and display them to table
