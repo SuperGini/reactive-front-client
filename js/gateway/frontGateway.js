@@ -29,4 +29,18 @@ class FrontGateway {
         const response = await fetch(`http://localhost:8080/customer/${username}`, config);
         return response;
     }
+
+    async addBasketItem(basketItem, username){
+        const config = {
+            method: "PUT",
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(basketItem)
+        }
+
+        const customerResponse = await fetch(`http://localhost:8080/basketItems/${username}`, config);
+        return customerResponse;
+    }
 }

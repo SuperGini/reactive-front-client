@@ -8,12 +8,14 @@ class LoginController {
     loginService = new LoginService();
     loginUsername = document.querySelector(".login-username");
 
-    findCustomer() {
-        return this.loginService.findCustomer(this.loginUsername.value);
+     async findCustomer() {
+
+
+        const response = this.loginService.findCustomer(this.loginUsername.value);
     }
 }
 const loginController = new LoginController();
 
-loginBtn.addEventListener("click", () => loginController.findCustomer());
+loginBtn.addEventListener("click",  async () => loginController.findCustomer().then());
 
 createAccountLink.addEventListener('click', () => createAccountLink.href = './create-account.html');

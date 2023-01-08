@@ -4,8 +4,12 @@ class LoginService {
 
     usernameError = document.querySelector(".username-error-message");
 
+
     gateway = new FrontGateway();
     loginVew = new LoginView();
+    pageSelector = new PageSelector();
+
+
 
     async findCustomer(usernameRequest) {
 
@@ -19,6 +23,9 @@ class LoginService {
                     console.log(`usernameRequest: =  ${usernameRequest} si username: = ${username}`);
 
                     this.usernameError.innerHTML = "";
+                    this.pageSelector.changeToInternalPage("./main.html");
+                    //saves the username in sessionStorage
+                    sessionStorage.setItem("ginitoruAppUsername", username);
                     return username;
                 }
             }
@@ -34,3 +41,4 @@ class LoginService {
         }
     }
 }
+
