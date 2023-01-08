@@ -11,21 +11,21 @@ class MainController {
     item = document.querySelectorAll(".item");
     mainService = new MainService();
 
-    getItemFromPage(){
-        const itemList = [ new BasketItem(
-                    this.item[0].value,
-                    this.item[1].value,
-                    this.item[2].value)];
-        return itemList;
+    getItemFromPage() {
+        return [new BasketItem(
+            this.item[0].value,
+            this.item[1].value,
+            this.item[2].value)
+        ];
     }
 
-    addBasketItem(){
-      return this.mainService
-                   .addBasketItem(this.getItemFromPage(),
-                                    sessionStorage.getItem("ginitoruAppUsername"));
+    addBasketItem() {
+        return this.mainService
+            .addBasketItem(this.getItemFromPage(),
+                sessionStorage.getItem("ginitoruAppUsername"));
     }
 
-    resetFields(){
+    resetFields() {
         this.item.forEach(rowItem => rowItem.value = "");
     }
 
